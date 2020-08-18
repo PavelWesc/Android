@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Mir{
+    public static void main(String [] args) {
+        Scanner scanner = new Scanner(System.in);
+       /* float  r;
+                System.out.println("Введите первое число");
+        float  a = scanner.nextFloat();
+        System.out.println("Введите второе число");
+        float  b = scanner.nextFloat();
+
+        System.out.println("Вы можете:\n"+
+                "1 - Сложение +\n"+
+                        "2 - Вычитание -\n"+
+                        "3 - Умножение *\n"+
+                        "4 - Деление /\n");
+        float  c = scanner.nextFloat();
+                if (c==1) {
+           r = (a+b); System.out.println(r);
+                                    }else {
+                    if (c==2) {
+                        r = (a-b);System.out.println(r);
+                    }else if (c==3) {
+                        r = (a*b);System.out.println(r);
+                    }else if (c==4) {
+                        r =(a/b);System.out.println(r);}
+
+                }*/
+        int a = 987;
+        System.out.println("Первое число: "+(a-a%100)/100);
+        System.out.println("Второе число: "+(a%100-a%10)/10);
+        System.out.println("Третье число: "+(a%10));
+    }}
