@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Mir{
     public static void main(String [] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите градусы по Цельсию");
+        System.out.println("Введите число");
         double b = scanner.nextFloat();
         System.out.println(b*15/100+b);
     }
