@@ -1,1 +1,3 @@
-
+String name = "Pavel";
+        int age = 35;
+        String town = "Moscow";
