@@ -10,7 +10,12 @@
 
 public class Main {
     public static int min(int a, int b, int c) {
-        return (a<b) ? ((a<c) ? a : c) : ((b<c) ? b : c);    }
+    
+  /*  Мой код:*/
+       int m = a;
+        if(m>b){ m=b;} if (m>c){ m=c;} return m;
+        
+      /* Нашел в сети:*/  return (a<b) ? ((a<c) ? a : c) : ((b<c) ? b : c);    }
 
     public static void main(String[] args) {
         System.out.println(min(1, 2, 3));
