@@ -15,6 +15,12 @@ public class Main {
        int m = a;
         if(m>b){ m=b;} if (m>c){ m=c;} return m;
         
+        int m;
+        if (a <= b & a <= c)             m = a;
+        if (b <= a & b <= c)             m = b;
+        else                             m = c;
+        return m;}
+        
       /* Нашел в сети:*/  return (a<b) ? ((a<c) ? a : c) : ((b<c) ? b : c);    }
 
     public static void main(String[] args) {
