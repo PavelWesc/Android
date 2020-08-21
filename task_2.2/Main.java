@@ -15,30 +15,12 @@
 
 public class Main {
     public static int min(int a, int b, int c, int d) {
-        int m;
-        if (a < c && a < d && a < b) {
-            return m = a;
+            return min(min(a, b), min(c, d));
         }
-        else if (c < a && c < d && c < b) {
-            return m = c;
-        }
-        else if (b < a && b < c && b < d) {
-            return m = b;
-        }
-        else
-            return m = d;
 
-    }
-
-    public static int min(int a, int b) {
-        int u;
-        
-        if (a < b) { 
-        return a;
-        }
-        else {
-        return b; 
-           }
+        public static int min(int a, int b) {
+            if (a < b) return a; return b;
+            }
 
     }
 
