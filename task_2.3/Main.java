@@ -15,7 +15,7 @@ public class Main {
        int sum = 1;
         int i;
         for (i=1; i<=10; i++)
-        sum = sum * i;{}
+        sum = sum * i;
         System.out.println(sum);
 
     }
