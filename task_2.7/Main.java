@@ -16,7 +16,6 @@ public class Main {
         int b = ((546 - a * 100)/10);
         int c = ((546 - a * 100)-b*10);
 
-        number = a + b + c;
-        return number;
+        
     }
 }
