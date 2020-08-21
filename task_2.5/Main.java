@@ -13,15 +13,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        String a = "Мама";
-        String b = "Мыла";
-        String c = "Раму";
-        System.out.println(a+b+c);
-        System.out.println(a+c+b);
-        System.out.println(b+a+c);
-        System.out.println(b+c+a);
-        System.out.println(c+a+b);
-        System.out.println(c+b+a);
+          String array[] = new String[3];
+        array[0] = "Мама";
+        array[1] = "Мыла";
+        array[2] = "Раму";
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                for (int k = 0; k < array.length; k++) {
+                    if(i!=j & i!=k & j!=k) // Условие убирающие повторы
+                        System.out.println(array[i]+array[j]+array[k]);
+                }
+            }
+        }
 
     }
 }
