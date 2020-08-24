@@ -13,9 +13,26 @@
 
 
 public class Dog {
-    //напишите тут ваш код
-
     public static void main(String[] args) {
 
+        N Sharik = new N("Шарик", 10);
+
+                System.out.println("Кличка собаки: " + Sharik.getName()+" Ему " + Sharik.getAge() + " лет");
     }
 }
+class N{
+    private String name;
+    private int age;
+
+    public N(String name, int age){
+        this.name = name;
+        this.age = age;
+
+    }
+    public String getName() {
+        return this.name;
+    }
+    public int getAge() {
+        return this.age;
+    }
+        }
