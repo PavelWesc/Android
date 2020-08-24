@@ -32,7 +32,10 @@ gosha.about();
 Плюсом добавил:
 public Person getFather(){
         return this.father;}
-
+и
+void about() {
+        System.out.println("Меня зовут " + name);
+    }
 
     }
 }
