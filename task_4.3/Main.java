@@ -56,8 +56,8 @@ public class Pegas extends Horse {
 
 public class Main {
     public static void main (String [] args){
-        Horse mustang = new Horse (true, "Ржет",  (byte)4, "Рысак", "Черный");
-        Pegas ares = new Pegas(true, "Ржет",  (byte)4, "Рысак", "Черный");
+        Horse mustang = new Horse (true, "Игого",  (byte)4, "Рысак", "Черный");
+        Pegas ares = new Pegas(true, "Игого",  (byte)4, "Рысак", "Черный");
         ares.fly();
         mustang.run();
         }
