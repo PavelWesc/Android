@@ -13,26 +13,29 @@
 
 
 public class Dog {
+    String name;
+    int age;
+
     public static void main(String[] args) {
 
-        Dog Sharik = new Dog("Шарик", 10);
+        Dog Sharik = new Dog();
+        Sharik.setName("Sharik");
+        Sharik.setAge(10);
         System.out.println("Пес "+Sharik.getName());
         System.out.println("Ему "+Sharik.getAge()+" лет");
 
     }
-}
-class Dog{
-    String name;
-    int age;
 
-    public Dog(String name, int age){
-        this.name = name;
-        this.age = age;
+
+    public void setName(String name){
+    this.name = name;
     }
-    void setName (String name){}
-    void setAge (int age){}
+   public void setAge (int age){
+    this.age = age;
+    }
+
     public String getName() {
-        return this.name;    }
+        return name;    }
     public int getAge() {
-        return this.age;    }
+        return age;    }
 }
