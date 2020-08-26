@@ -15,24 +15,24 @@
 public class Dog {
     public static void main(String[] args) {
 
-        N Sharik = new N("Шарик", 10);
+        Dog Sharik = new Dog("Шарик", 10);
+        System.out.println("Пес "+Sharik.getName());
+        System.out.println("Ему "+Sharik.getAge()+" лет");
 
-                System.out.println("Кличка собаки: " + Sharik.getName()+" Ему " + Sharik.getAge() + " лет");
     }
 }
-class N{
-    private String name;
-    private int age;
+class Dog{
+    String name;
+    int age;
 
-    public N(String name, int age){
+    public Dog(String name, int age){
         this.name = name;
         this.age = age;
-
     }
+    void setName (String name){}
+    void setAge (int age){}
     public String getName() {
-        return this.name;
-    }
+        return this.name;    }
     public int getAge() {
-        return this.age;
-    }
-        }
+        return this.age;    }
+}
