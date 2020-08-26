@@ -15,6 +15,7 @@ public class Main {
         int a = 546/100;
         int b = ((546 - a * 100)/10);
         int c = ((546 - a * 100)-b*10);
+        return a+b+c;
 
         
     }
