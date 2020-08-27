@@ -19,24 +19,40 @@
 */
 
 import java.io.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 import java.util.Arrays;
 
 public class Main {
-        public static void main(String[] args) throws IOException {
-            try {
-                FileWriter writer = new FileWriter("C://Java/test.txt");
-                writer.write("5 8 -2 11 3 15 2 10");
-                writer.flush();
+    public static void main(String[] args) throws IOException {
+
+                        try (Scanner read = new Scanner(System.in);
+                 BufferedWriter writer = new BufferedWriter(new FileWriter("C://Java/test.txt"))) {
+                String line = "";
+                do {
+                    System.out.print("Введите число или exit: ");
+                    line = read.nextLine();
+                    if (!line.toLowerCase().equals("exit")) {
+                        writer.write(line);
+                        writer.newLine();
+                        writer.flush();
+                    }
+                } while (!line.toLowerCase().equals("exit"));
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            BufferedReader reader = new BufferedReader(new FileReader(new File("C://Java/test.txt")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("C://Java/test.txt")));
 
-            reader.lines()
-                    .flatMap(x -> Arrays.stream(x.split(" ")))
-                    .map(Integer::parseInt)
-                    .filter(x -> x % 2 == 0)
-                    .sorted()
-                    .forEach(System.out::println);
-            reader.close();
-        }}
+        reader.lines()
+                .flatMap(x -> Arrays.stream(x.split(" ")))
+                .map(Integer::parseInt)
+                .filter(x -> x % 2 == 0)
+                .sorted()
+                .forEach(System.out::println);
+        reader.close();
+        }
+
+    }
